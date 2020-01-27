@@ -53,13 +53,53 @@ doc/*.txt 	# игнорировать doc/notes.txt но не doc/server/arch.tx
 |git remote rename pb paul|переименование удаленных репозиториев|
 |git remote rm paul|удаление ссылки на удаленный репозиторий|
 |git tag|список доступных тегов|
-|git tag -l ,v1.8.5*|поиск тегов по шаблону|
+|git tag -l ,v1.8.5\*|поиск тегов по шаблону|
 |git tag -a v1.2 -m 'my version'|тэг с комментарием|
 |git tag v1.2|легковесный тег|
 |git tag -a v1.2 9fce2aa| проставление тега конкретному коммиту|
 |git push origin v1.5|отправка тега в удаленный репозиторий|
 |git push origin --tags|отправка всех тегов в удаленный репозиторий|
 |git branch \<name\>|создание новой ветки|
+|git checkout \<name\>|смена ветки|
+|git log --oneline --decorate --graph --all|выводит историю коммитов, показывая места расположения указателей и точки расхождения|
+|git checkout -b \<name\>|создать ветку и сразу перейти|
+|git merge hotfix|объединить ветку hotfix с текущей веткой|
+|git branch|список имеющихся веток|
+|git branch -v|последний коммит в каждой ветке|
+|git branch --merged|ветки слитые с текущей веткой|
+|git branch --no-merged|ветки не слитые с текущей веткой|
+|git branch -d \<name\>|удаление слитой ветки|
+|git push origin serverfix:awesomebranch|переслать содержимое локальной ветки в указанную ветку в удаленном репозитории|
+|git checkout -b serverfix origin/serverfix или git checkout --track origin/serverfix|создание локальной ветки из удаленной|
+|git branch -u origin/serverffix|сопоставить только что скачанной удаленной ветке существующую локальную ветку или поменять удаленную ветку за которой следите|
+|git branch -vv|список веток наблюдения|
+|git pull|стягивание удаленной ветки в локальную|
+|git push origin --delete serverfix|удаление удаленной ветки|
+|git rebase master|стянуть изменения с master на текущую ветку|
+|||
+|||
+|||
+|||
+|||
+|||
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
