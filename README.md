@@ -76,3 +76,9 @@ git pull                                        // стягивание удал
 git push origin --delete serverfix              // удаление удаленной ветки        
 git rebase master                               // стянуть изменения с master на текущую ветку     
 ```
+
+## cherry-pick
+
+1. Делаем коммиты в ветке 'DEV'
+1. Переключаемся на 'MASTER'
+1. ```git cherry-pick ~HASH-коммита из DEV~```
